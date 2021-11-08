@@ -1,0 +1,50 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50vw;
+  padding: 0 5rem;
+  margin-bottom: 3rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem 1rem;
+  margin: 1rem 1%;
+  background-color: transparent;
+  border: none;
+  box-shadow: -1px 1px 3px rgba(17, 17, 17, 0.8);
+}
+
+.name-input,
+.email-input {
+  width: 48%;
+}
+
+.subject-input {
+  width: 98%;
+}
+
+textarea {
+  width: 98%;
+}
+
+button {
+  margin: 1rem 0 0 auto;
+  padding: 0.5rem 1.25rem;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  border: none;
+  background-color: transparent;
+  box-shadow: -7px 7px 10px rgba(17, 17, 17, 0.25);
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
