@@ -1,0 +1,6 @@
+[submodule "projects/hangman"]
+	path = projects/hangman
+	url = https://github.com/sbrcly/hangman
+[submodule "projects/testportal"]
+	path = projects/testportal
+	url = https://github.com/sbrcly/testportal
