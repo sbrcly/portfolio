@@ -43,12 +43,12 @@ const social = [
     {
         name: 'Github',
         url: 'https://github.com/sbrcly',
-        icon: '#'
+        icon: '<i class="fab fa-github-square"></i>'
     },
     {
         name: 'Twitter',
         url: 'https://twitter.com/sbrcly',
-        icon: '#'
+        icon: '<i class="fab fa-twitter-square"></i>'
     }
 ];
 

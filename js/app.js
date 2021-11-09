@@ -114,3 +114,19 @@ class SectionNavigation {
 }
 
 const pageNavigation = new SectionNavigation(siteSections, siteSectionLinks);
+
+const socialBtns = document.querySelector('.social-btns');
+
+const applySocialBtns = (appendTo, accounts) => {
+    for (let account of accounts) {
+        const socialBtn = document.createElement('a');
+        socialBtn.classList.add('social-btn');
+        socialBtn.classList.add(`${account.name}`);
+        socialBtn.setAttribute('href', account.url);
+        socialBtn.setAttribute('target', '_blank');
+        socialBtn.innerHTML = account.icon;
+        appendTo.append(socialBtn);
+    }
+}
+
+applySocialBtns(socialBtns, social);
