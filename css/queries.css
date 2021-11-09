@@ -1,0 +1,29 @@
+@media (max-width: 1550px) {
+	html {
+		font-size: 13px;
+	}
+	.bg-decoration {
+		letter-spacing: 0px;
+	}
+	.latest-work-container {
+		width: 66.66666vw;
+		min-width: 1200px;
+	}
+	img {
+		height: 125px;
+		width: 125px;
+		margin: 0 1.5rem;
+	}
+	.project-main-info-text {
+		max-width: 70%;
+	}
+	.contact-info {
+		transform: translate(-50%, -50%);
+		width: 75vw;
+		height: 55vh;
+	}
+	form {
+		width: 50vw;
+		margin-bottom: 50rem;
+	}
+}

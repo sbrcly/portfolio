@@ -9,12 +9,12 @@ const lpViewBtn = document.querySelectorAll('.view-btn');
 const pages = [
     {
         name: 'Home',
-        url: '/',
+        url: '#',
         icon: '#',
         important: false
     },
     {
-        name: 'About Me',
+        name: 'About',
         url: '#',
         icon: '#',
         important: false
@@ -33,7 +33,7 @@ const pages = [
     },
     {
         name: 'Contact',
-        url: '/contact',
+        url: '#',
         icon: '#',
         important: true
     }
@@ -84,4 +84,3 @@ const projects = [
         imgAlt: 'Screenshot of Stopwatch app'
     }
 ];
-

@@ -1,5 +1,5 @@
 // SET NAV LINKS
-
+console.log(document.body.clientWidth);
 class Navbar {
     constructor (links, appendTo, destination) {
         this.links = links;
@@ -13,6 +13,7 @@ class Navbar {
             const {name, url, icon, important} = link;
             const navLink = document.createElement('a');
             navLink.classList.add(`${this.destination}-link`);
+            navLink.id = `${name}`;
             navLink.setAttribute('href', url);
             navLink.innerHTML = `${name}`;
             important === true ? navLink.classList.add('important-link') : null;
@@ -34,14 +35,14 @@ const latestWorkTitle1 = document.querySelector('.pt-1');
 const projectImg1 = document.querySelector('.pi-1');
 const projectTxt1 = document.querySelector('.pmit-1');
 
-const loadAnimation = (itemsToAnimate, loadType, loadDirection, delay) => {
+const loadAnimation = (itemsToAnimate, type, loadDirection, delay) => {
     setTimeout(() => {
         if (itemsToAnimate.length > 1) {
             for (let item of itemsToAnimate) {
-                item.classList.add(`${loadType}-${loadDirection}`);
+                item.classList.add(`${type}-${loadDirection}`);
             }
         }   else {
-            itemsToAnimate.classList.add(`${loadType}-${loadDirection}`);
+            itemsToAnimate.classList.add(`${type}-${loadDirection}`);
         }
         
     }, delay);
@@ -85,3 +86,31 @@ class Projects {
 }
 
 const latestProjects = new Projects(projects, lpTitles, lpDescription, lpImg, lpViewBtn, lpCodeBtn);
+
+
+const siteSections = document.querySelectorAll('section');
+const siteSectionLinks = document.querySelectorAll('.main-nav-link');
+
+class SectionNavigation {
+    constructor(sections, sectionLinks) {
+        this.sections = sections;
+        this.sectionLinks = sectionLinks;
+
+        for (let link of sectionLinks) {
+            link.addEventListener('click', () => {
+                this.showSection(link);
+            });
+        }
+    }
+    showSection = (link) => {
+        for (let section of this.sections) {
+            if (section.classList.contains(link.id)) {
+                section.classList.add('active');
+            }   else {
+                section.classList.remove('active');
+            }
+        }
+    }
+}
+
+const pageNavigation = new SectionNavigation(siteSections, siteSectionLinks);

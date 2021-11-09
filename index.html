@@ -11,56 +11,87 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/queries.css">
 </head>
 <body>
 
     <nav>
         <div class="nav-links"></div>
     </nav>
-    
+
     <div class="bg-decoration left">
         <i class="fas fa-circle"></i>
-        <p>Welcome to my portfolio, thank you for your time</p>
+        <p>Welcome to my portfolio. I appreciate you taking the time to be here</p>
         <i class="fas fa-circle"></i>
     </div>
     <div class="bg-decoration right">
         <i class="fas fa-circle"></i>
-        <p>This sentence serves no purpose other than styling</p>
+        <p>If you took the time to read this you must be detail oriented like me</p>
         <i class="fas fa-circle"></i>
     </div>
 
-    <header>
-        <h1>Latest . Work</h1>
-        <div class="latest-work-container">
-            <div class="latest-project lp-1">
-                <h2 class="project-title pt-1"></h2>
-                <div class="project-main-info pmi-1">
-                    <img class="project-img pi-1" src="" alt="">
-                    <div class="project-main-info-text pmit-1">
-                        <p class="project-description"></p>
-                        <div class="project-buttons">
-                            <a class="view-btn" target="_blank">Project</a>
-                            <a class="code-btn" target="_blank">Code</a>
+    <section class="Home active">
+        <header>
+            <h1>Latest . Work</h1>
+            <div class="latest-work-container">
+                <div class="latest-project lp-1">
+                    <h2 class="project-title pt-1"></h2>
+                    <div class="project-main-info pmi-1">
+                        <img class="project-img pi-1" src="" alt="">
+                        <div class="project-main-info-text pmit-1">
+                            <p class="project-description"></p>
+                            <div class="project-buttons">
+                                <a class="view-btn" target="_blank">Project</a>
+                                <a class="code-btn" target="_blank">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-project lp-2">
+                    <h2 class="project-title pt-2"></h2>
+                    <div class="project-main-info">
+                        <img class="project-img pi-2" src="" alt="">
+                        <div class="project-main-info-text pmit-2">
+                            <p class="project-description"></p>
+                            <div class="project-buttons">
+                                <a class="view-btn" target="_blank">Project</a>
+                                <a class="code-btn" target="_blank">Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="latest-project lp-2">
-                <h2 class="project-title pt-2"></h2>
-                <div class="project-main-info">
-                    <img class="project-img pi-2" src="" alt="">
-                    <div class="project-main-info-text pmit-2">
-                        <p class="project-description"></p>
-                        <div class="project-buttons">
-                            <a class="view-btn" target="_blank">Project</a>
-                            <a class="code-btn" target="_blank">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </header>
+    </section>
+
+    <section class="About coming-soon">
+        <h1>Coming soon. . .</h1>
+        <h3>(within 48 hours, soon)</h3>
+    </section>
+
+    <section class="Books coming-soon">
+        <h1>Coming soon. . .</h1>
+        <h3>(within 48 hours, soon)</h3>
+    </section>
+
+    <section class="Projects coming-soon">
+        <h1>Coming soon. . .</h1>
+        <h3>(within 48 hours, soon)</h3>
+    </section>
+
+    <section class="Contact">
+        <div class="contact-info">
+            <h1>Contact . Me</h1>
+            <form action="">
+                <input type="text" class="name-input" placeholder="Enter name...">
+                <input type="email" class="email-input" placeholder="Enter email...">
+                <input type="text" class="subject-input" placeholder="Subject...">
+                <textarea name="message" id="" cols="30" rows="7" placeholder="Your message..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
+    </section>
         <h3 class="subtitle"><i class="fas fa-circle"></i> Scott Barclay <i class="fas fa-circle"></i><br><span>Web Developer</span></h3>
-    </header>
     <script src="/js/index.js"></script>
     <script src="/js/app.js"></script>
 </body>

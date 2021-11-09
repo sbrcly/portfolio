@@ -1,45 +1,56 @@
 @keyframes loadDown {
-  0% {
-    transform: translateY(-5px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+	0% {
+		transform: translateY(-5px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 
 @keyframes loadLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateX(5px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 @keyframes loadRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateX(-5px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes loadUp {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -49%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
 }
 
 h1.translate-left,
 .pt-2.translate-left,
 .pi-2.translate-left,
 .pmit-2.translate-left {
-  animation: loadLeft 1s forwards;
+	animation: loadLeft 1s forwards;
 }
 
 .pt-1.translate-right,
 .pi-1.translate-right,
 .pmit-1.translate-right {
-  animation: loadRight 1s forwards;
+	animation: loadRight 1s forwards;
 }
