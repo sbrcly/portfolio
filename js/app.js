@@ -1,5 +1,4 @@
 // SET NAV LINKS
-console.log(document.body.clientWidth);
 class Navbar {
     constructor (links, appendTo, destination) {
         this.links = links;

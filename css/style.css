@@ -24,7 +24,7 @@ a {
 /* BACKGROUND DECORATION */
 
 .bg-decoration {
-	position: absolute;
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	width: 95vh;
@@ -48,9 +48,14 @@ a {
 /* NAV CONTENT */
 
 nav {
-	padding-top: 1.5rem;
+	padding: 1.5rem 0;
 	display: flex;
 	justify-content: center;
+	position: fixed;
+	left: 50%;
+	z-index: 9;
+	background-color: #f1eee9;
+	transform: translateX(-50%);
 }
 
 .main-nav-link {
@@ -108,7 +113,7 @@ header {
 	justify-content: space-around;
 	top: 50%;
 	left: 50%;
-	height: 60vh;
+	height: 55vh;
 	transform: translate(-50%, -50%);
 }
 
@@ -122,8 +127,7 @@ h1 {
 
 .latest-work-container {
 	display: flex;
-	width: 66.66666vw;
-	min-width: 1250px;
+	min-width: 60vw;
 }
 
 .latest-project {
@@ -168,6 +172,7 @@ img {
 .project-main-info-text {
 	opacity: 0;
 	max-width: 60%;
+	padding-right: 1rem;
 }
 
 .project-description {
@@ -242,6 +247,7 @@ a:hover {
 
 .contact-info h1 {
 	padding-bottom: 2rem;
+	padding-left: 10rem;
 	margin-bottom: 3rem;
 	align-self: flex-start;
 	border-radius: 5%;
