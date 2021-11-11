@@ -272,7 +272,7 @@ form {
 	max-width: 1000px;
 	padding: 2rem 5rem;
 	background-color: #ded4be;
-	border: 2px solid #111;
+	border: 1px solid #111;
 	border-radius: 5px;
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
@@ -285,11 +285,11 @@ textarea {
 	border: none;
 	box-shadow: -5px -10px 15px rgba(0, 0, 0, 0.05);
 	border-radius: 3px;
-	border-top: 2px solid #111;
+	border-top: 1px solid #111;
 }
 
 textarea {
-	border-top: 2px solid #111;
+	border-top: 1px solid #111;
 }
 
 .name-input,
@@ -318,8 +318,8 @@ button {
 	background-color: transparent;
 	box-shadow: 7px -7px 15px rgba(17, 17, 17, 0.1);
 	border-radius: 3px;
-	border-bottom: 3px solid #111;
-	border-right: 3px solid #111;
+	border-bottom: 1px solid #111;
+	border-right: 1px solid #111;
 }
 
 button:hover {
