@@ -120,13 +120,15 @@ class SectionNavigation {
 
 const pageNavigation = new SectionNavigation(siteSections, siteSectionLinks);
 
-const socialBtns = document.querySelector('.social-btns');
+const socialBtns = document.querySelector('.social-media-accounts');
 
 const applySocialBtns = (appendTo, accounts) => {
     for (let account of accounts) {
         const socialBtn = document.createElement('a');
-        socialBtn.classList.add('social-btn');
+        socialBtn.classList.add('social-media');
         socialBtn.classList.add(`${account.name}`);
+        socialBtn.id = account.name;
+        socialBtn.setAttribute('rel', 'noopener');
         socialBtn.setAttribute('href', account.url);
         socialBtn.setAttribute('target', '_blank');
         socialBtn.innerHTML = account.icon;

@@ -128,7 +128,7 @@ h1 {
 
 .main-content-container {
 	display: flex;
-	min-width: 60vw;
+	min-width: 65vw;
 }
 
 .container-section {
@@ -152,7 +152,7 @@ h2 span {
 	justify-content: space-around;
 	border-top: 2px solid #222;
 	border-bottom: 2px solid #222;
-	height: 250px;
+	height: 275px;
 	width: 100%;
 }
 
@@ -317,14 +317,14 @@ button:hover {
 	transition: all 0.1s;
 }
 
-.social-btns {
+.social-media-accounts {
 	position: absolute;
 	top: 85%;
 	left: 2%;
 	font-size: 2rem;
 }
 
-.social-btn {
+.social-media {
 	margin: 1rem;
 	padding: 0;
 }
@@ -349,6 +349,11 @@ button:hover {
 	opacity: 1;
 	color: #4a4f42;
 }
+
+.icon-container i:hover {
+	transform: scale(1.05);
+}
+
 .skills-description {
 	max-width: 90%;
 	line-height: 1.5;
