@@ -23,7 +23,7 @@ class Navbar {
         this.appendTo.append(toAppend);
     }
 }
-const mainNav = new Navbar(pages, mainNavbar, 'main-nav');
+const mainNav = new Navbar(pages, navLinks, 'main-nav');
 
 const mainNavLinks = document.querySelectorAll('.main-nav-link');
 const pageHeading = document.querySelectorAll('h1');
@@ -53,7 +53,7 @@ const loadAnimation = (itemsToAnimate, type, loadDirection, delay) => {
     }, delay);
 }
 
-const translateDown = loadAnimation(mainNavLinks, 'translate', 'down', 500);
+const translateDown = loadAnimation(mainNavLinks, 'translate', 'down', 250);
 const translateLeft = loadAnimation([
     pageHeading,
     latestWorkTitle2,
@@ -63,6 +63,48 @@ const translateRight = loadAnimation([
     latestWorkTitle1,
     sectionImg1,
     sectionTxt1], 'translate', 'right', 10);
+
+// Hamburger Menu Toggle
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+const siteSections = document.querySelectorAll('section');
+const siteSectionLinks = document.querySelectorAll('.main-nav-link');
+
+class SectionNavigation {
+    constructor(sections, sectionLinks) {
+        this.sections = sections;
+        this.sectionLinks = sectionLinks;
+
+        for (let link of sectionLinks) {
+            link.addEventListener('click', () => {
+                this.showSection(link);
+            });
+        }
+    }
+    showSection = (link) => {
+        for (let section of this.sections) {
+            if (section.classList.contains(link.id)) {
+                section.classList.add('active');
+            }   else {
+                section.classList.remove('active');
+            }
+        }
+    }
+}
+
+const pageNavigation = new SectionNavigation(siteSections, siteSectionLinks);
+
+const toggleMenu = () => {
+    navLinks.classList.toggle('show-on-mobile');
+    for (let link of siteSectionLinks) {
+        link.addEventListener('click', toggleMenu);
+    }
+}
+
+hamburgerMenu.addEventListener('click', toggleMenu);
+
+
 
 // SET LATEST PROJECT INFORMATION
 
@@ -92,33 +134,6 @@ class Projects {
 
 const latestProjects = new Projects(projects, csTitles, csDescription, csImg, csViewBtn, csCodeBtn);
 
-
-const siteSections = document.querySelectorAll('section');
-const siteSectionLinks = document.querySelectorAll('.main-nav-link');
-
-class SectionNavigation {
-    constructor(sections, sectionLinks) {
-        this.sections = sections;
-        this.sectionLinks = sectionLinks;
-
-        for (let link of sectionLinks) {
-            link.addEventListener('click', () => {
-                this.showSection(link);
-            });
-        }
-    }
-    showSection = (link) => {
-        for (let section of this.sections) {
-            if (section.classList.contains(link.id)) {
-                section.classList.add('active');
-            }   else {
-                section.classList.remove('active');
-            }
-        }
-    }
-}
-
-const pageNavigation = new SectionNavigation(siteSections, siteSectionLinks);
 
 const socialBtns = document.querySelector('.social-media-accounts');
 

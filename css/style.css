@@ -58,10 +58,18 @@ nav {
 	transform: translateX(-50%);
 }
 
+.hamburger-menu {
+	display: none;
+}
+
+.nav-links {
+	padding-top: 1rem;
+}
+
 .main-nav-link {
 	opacity: 0;
 	margin: 0 2rem;
-	color: #111;
+	color: #4a4f42;
 	font-weight: 800;
 	font-size: 13px;
 	letter-spacing: 5px;
@@ -71,6 +79,10 @@ nav {
 	animation: loadDown 1s forwards;
 }
 
+.main-nav-link.show-on-mobile {
+	display: flex;
+}
+
 .important-link {
 	opacity: 0;
 	border-radius: 5px;
@@ -78,7 +90,7 @@ nav {
 }
 
 .main-nav-link.important-link.translate-down {
-	animation: loadDown 1s 1s forwards;
+	animation: loadDown 1s 0.5s forwards;
 }
 
 a.main-nav-link:hover {
@@ -95,13 +107,13 @@ section {
 	z-index: -1;
 	height: 80vh;
 	width: 100vw;
-	transition: all 0.5s;
+	transition: opacity 0.5s ease-in-out;
 }
 
 section.active {
 	z-index: 1;
 	opacity: 1;
-	transition: all 1s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 }
 
 /* HOME CONTENT */
@@ -118,7 +130,7 @@ header {
 }
 
 h1 {
-	font-size: 1.7rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	padding-bottom: 5rem;
 	letter-spacing: 5px;
@@ -153,7 +165,6 @@ h2 span {
 	border-top: 2px solid #222;
 	border-bottom: 2px solid #222;
 	height: 275px;
-	width: 100%;
 }
 
 .pmi-1 {
@@ -237,11 +248,12 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	top: 50%;
+	top: 62%;
 	left: 50%;
-	transform: translate(-50%, -35%);
+	transform: translate(-50%, -50%);
 	width: 67vw;
 	height: 64vh;
+	transition: all 1s;
 }
 
 .contact-info h1 {
@@ -337,6 +349,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 }
+
 .icon-container {
 	display: flex;
 	flex-direction: row;

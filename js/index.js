@@ -1,4 +1,5 @@
 const mainNavbar = document.querySelector('nav');
+const navLinks = document.querySelector('.nav-links');
 const latestSectionsContainer = document.querySelectorAll('.container-section');
 const csTitles = document.querySelectorAll('.section-title');
 const csDescription = document.querySelectorAll('.section-description');
