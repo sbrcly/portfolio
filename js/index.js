@@ -22,7 +22,7 @@ const pages = [
     },
     {
         name: 'Books',
-        url: '#',
+        url: '/books',
         icon: '#',
         important: false
     },
@@ -79,10 +79,20 @@ const projects = [
         type: 'Utility',
         techStack: ['HTML', 'CSS', 'JavaScript'],
         description: 'This is a stopwatch that tracks and compares lap times. Your current lap time is checked against your previous lap time to determine which was faster.',
-        sectionLink: '#',
-        codeLink: '#',
+        sectionLink: '/projects/stopwatch',
+        codeLink: 'https://github.com/sbrcly/stopwatch',
         img: '#',
         imgAlt: 'Screenshot of Stopwatch app'
+    },
+    {
+        name: 'Betting Odds',
+        type: 'Utility',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        description: 'Pick a sport, odds format and market type and you will be shown the current betting lines from a variety of sportsbooks.',
+        sectionLink: '/projects/bettingOdds',
+        codeLink: 'https://github.com/sbrcly/oddsTable',
+        img: '#',
+        imgAlt: 'Screenshot Betting odds app'
     }
 ];
 

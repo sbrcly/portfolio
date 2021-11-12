@@ -370,6 +370,7 @@ button:hover {
 .skills-description {
 	max-width: 90%;
 	line-height: 1.5;
+	text-align: center;
 }
 
 .skills-description p:last-of-type {

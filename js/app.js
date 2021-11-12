@@ -13,6 +13,9 @@ class Navbar {
             const navLink = document.createElement('a');
             navLink.classList.add(`${this.destination}-link`);
             navLink.id = `${name}`;
+            if (navLink.id === 'Books') {
+                navLink.setAttribute('target', '_blank');
+            }
             navLink.setAttribute('href', url);
             navLink.innerHTML = `${name}`;
             important === true ? navLink.classList.add('important-link') : null;
@@ -71,15 +74,19 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const siteSections = document.querySelectorAll('section');
 const siteSectionLinks = document.querySelectorAll('.main-nav-link');
 
+// Section Navigation
+
 class SectionNavigation {
     constructor(sections, sectionLinks) {
         this.sections = sections;
         this.sectionLinks = sectionLinks;
 
         for (let link of sectionLinks) {
-            link.addEventListener('click', () => {
-                this.showSection(link);
-            });
+            if (link.id != 'Books') {
+                link.addEventListener('click', () => {
+                    this.showSection(link);
+                });
+            }
         }
     }
     showSection = (link) => {
