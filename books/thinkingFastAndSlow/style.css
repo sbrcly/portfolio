@@ -207,3 +207,31 @@ main {
 .chapter p.subPara {
 	padding-left: 2rem;
 }
+
+@media (max-width: 950px) {
+	.header-content {
+		padding: 2rem;
+	}
+	.header-content h1 {
+		font-size: 3rem;
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 725px) {
+	.themeToggle {
+		top: 1.5rem;
+		right: 1.5rem;
+	}
+	.header-content h1 {
+		font-size: 1.5rem;
+		letter-spacing: 3px;
+	}
+	.header-content h2 {
+		font-size: 1rem;
+	}
+	.part h1.partDescription {
+		font-size: 2rem;
+		letter-spacing: 5px;
+	}
+}

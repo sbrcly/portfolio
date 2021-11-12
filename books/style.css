@@ -223,17 +223,23 @@ main.darkMode {
 .post {
 	display: flex;
 	justify-content: center;
-	width: 75vw;
-	margin: 0 auto 8rem auto;
+	width: 80vw;
+	margin: 0 auto 10rem auto;
 }
 
 .post-header {
 	display: flex;
-	width: 40%;
+	width: 50%;
+}
+
+.book-img {
+	height: 100%;
+	position: relative;
 }
 
 .book-img img {
-	height: 40vh;
+	height: 500px;
+	width: 325px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.699);
 	margin-right: 2rem;
 }
@@ -249,10 +255,10 @@ main.darkMode .book-img img {
 }
 
 .book-info {
-	padding-left: 2rem;
+	padding: 0 1rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .book-info h2 {
@@ -262,17 +268,22 @@ main.darkMode .book-img img {
 
 .book-info h3 {
 	font-size: 1.25rem;
+	padding: 1rem 0;
 	font-weight: 400;
 }
 
 .post-main {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 	padding-left: 2rem;
-	max-width: 50%;
+	width: 50%;
 	font-size: 1.25rem;
+}
+
+.post-main p {
+	margin: 2rem 0;
 }
 
 .allNotes {
@@ -317,38 +328,56 @@ main.darkMode .book-img img {
 
 /* Media Queries */
 
-@media (min-width: 2000px) {
+@media (max-width: 2000px) {
 	.post {
-		margin: 0 auto 10rem auto;
+		width: 90vw;
 	}
-
-	.post-main {
-		justify-content: space-around;
+	.book-img img {
+		height: 350px;
+		width: 225px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.699);
+		margin-right: 2rem;
 	}
-
 	.post-main p {
-		font-size: 1.2rem;
-		line-height: 2.5rem;
-		padding-bottom: 2.5rem;
+		font-size: 1rem;
+		margin: 1rem 0;
 	}
-
 	.allNotes {
-		padding: 1rem 2rem;
+		padding: 0.5rem 1rem;
 	}
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1250px) {
+	.book-info {
+		padding-left: 0;
+	}
+	.post {
+		margin: 0 auto 10rem auto;
+		width: 97vw;
+	}
+	.post-main {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1025px) {
 	.header-content h1 {
 		font-size: 5rem;
 		letter-spacing: 7px;
 	}
-
 	.header-content h1 span {
 		font-size: 5rem;
 	}
+	.search input {
+		width: 60%;
+	}
+	.book-info h3 {
+		font-size: 1.1rem;
+		padding: 0.5rem 0;
+	}
 }
 
-@media (max-width: 830px) {
+@media (max-width: 950px) {
 	.header-content h1 {
 		font-size: 3rem;
 	}
@@ -356,36 +385,82 @@ main.darkMode .book-img img {
 	.header-content h1 span {
 		font-size: 4rem;
 	}
+	.post {
+		width: 80%;
+		flex-direction: column;
+		margin: 0 auto 10rem auto;
+	}
+	.post-header {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	.post-main {
+		padding-left: 0;
+		width: 100%;
+	}
 }
 
-@media (max-width: 660px) {
-	.header-content h1 {
-		letter-spacing: 0px;
-		padding: 0 0;
+@media (max-width: 725px) {
+	.search {
+		text-align: left;
+		padding-left: 1rem;
 	}
-
-	.header-content h1 span {
-		letter-spacing: 0px;
+	.search input {
+		width: 60%;
+		padding: 0.75rem 1rem;
 	}
-}
-
-@media (max-width: 535px) {
+	.themeToggle {
+		top: 1.75rem;
+		right: 1.5rem;
+	}
 	.header-content h1 {
 		font-size: 2rem;
+		letter-spacing: 2px;
 	}
-
 	.header-content h1 span {
 		font-size: 3rem;
 		padding: 0 0.5rem;
 	}
+	.subtitle {
+		font-size: 1rem;
+	}
+	.post {
+		width: 90%;
+	}
 }
 
-@media (max-width: 360px) {
-	.header-content h1 {
-		font-size: 2rem;
+@media (max-width: 415px) {
+	.search input {
+		width: 75%;
+		margin: auto;
 	}
-	.header-content h1 span {
-		font-size: 2;
-		padding: 0 0;
+	.header-content h1 {
+		font-size: 1.75rem;
+		letter-spacing: 1px;
+	}
+	.post {
+		width: 75vw;
+	}
+	.post-header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.book-img img {
+		height: auto;
+		width: 100%;
+		margin: 0 auto 2rem auto;
+	}
+	.book-info {
+		align-self: flex-start;
+	}
+}
+
+@media (max-width: 359px) {
+	.themeToggle {
+		right: 0.75rem;
+	}
+	.header-content h1 {
+		font-size: 1rem;
+		letter-spacing: 1px;
 	}
 }

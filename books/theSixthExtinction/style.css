@@ -204,3 +204,42 @@ main {
 	letter-spacing: 15px;
 	padding: 2rem 0;
 }
+
+@media (max-width: 950px) {
+	.header-content {
+		padding: 2rem;
+	}
+	.header-content h1 {
+		font-size: 3rem;
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 725px) {
+	.themeToggle {
+		top: 1.5rem;
+		right: 1.5rem;
+	}
+	.header-content h1 {
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+	}
+	.header-content h2 {
+		font-size: 1rem;
+	}
+	.chapter h2 {
+		font-size: 1.5rem;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 5rem;
+	}
+	.chapter h1 {
+		text-align: center;
+		padding-bottom: 1rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 2rem;
+		letter-spacing: 5px;
+	}
+}
