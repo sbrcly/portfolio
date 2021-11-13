@@ -1,137 +1,22 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-size: 20px;
-	line-height: 1.7;
-	font-family: 'Lato', sans-serif;
-}
-
-body.darkMode {
-	background-color: #222;
-	color: #fff;
-}
-
-.themeToggle {
-	position: fixed;
-	height: 28px;
-	width: 56px;
-	top: 2rem;
-	right: 3rem;
-	background-color: #e8be53;
-	border: 1px solid #e8be53;
-	border-radius: 25px;
-	z-index: 1;
-}
-
-.themeToggle.darkMode {
-	border: 1px solid #0f3050;
-	background-color: #0f3050;
-}
-
-.themeToggle .themeOverlay {
-	position: absolute;
-	height: 20px;
-	width: 20px;
-	background-color: #f7f7f7;
-	border-radius: 50%;
-	top: 50%;
-	left: 5%;
-	transform: translateY(-50%);
-	transition: all 0.25s;
-	box-shadow: 0 0 25px #cf5b06;
-}
-
-.themeToggle .themeOverlay:hover {
-	cursor: pointer;
-	transform: scale(1.2) translateY(-50%);
-	transform-origin: top;
-	box-shadow: 0 0 50px #cf5b06;
-}
-
-.themeToggle .themeOverlay.darkMode {
-	left: 55%;
-	background-color: #9c9a99;
-	transition: all 0.25s;
-	box-shadow: 0 0 25px #fff;
-}
-
-.themeToggle .themeOverlay.darkMode:hover {
-	box-shadow: 0 0 50px #fff;
-}
-
-.themeToggle i.fa-star {
-	position: absolute;
-	top: 50%;
-	left: 10%;
-	transform: translateY(-50%);
-	font-size: 0.75rem;
-	z-index: -1;
-	color: #fff;
-}
-
-.themeToggle i.fa-cloud {
-	position: absolute;
-	top: 50%;
-	right: 10%;
-	transform: translateY(-50%);
-	font-size: 0.75rem;
-	z-index: -1;
-	color: #fff;
-}
-
 header {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 40vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url(/books/theMadnessOfCrowds/madnessBG.jpg);
 	background-position: 0 30%;
 	background-size: cover;
 	color: #fafcfd;
-	box-shadow: 0 0px 25px #000;
 	font-family: 'Monda', sans-serif;
 }
 
 nav {
-	align-self: start;
-	position: fixed;
-	top: 3%;
-	clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
 	background-color: #9b5140;
-}
-
-nav.showHome {
-	left: 0;
-	transition: 0.5s;
-}
-
-nav.hideHome {
-	left: -61px;
-	transition: 0.5s;
 }
 
 nav a {
 	color: #fff;
-	font-size: 2rem;
-	margin: 0.25rem 2.5rem 0.25rem 1.5rem;
 }
 
 nav a:hover {
 	color: rgba(234, 234, 234, 0.822);
-	transition: all 0.4s;
-}
-.header-content {
-	text-align: center;
-	padding: 2rem 10rem;
-	border-radius: 25px 25px 0 0;
-	text-shadow: 0 0 20px #000;
 }
 
 .header-content h1 {
@@ -159,12 +44,6 @@ nav a:hover {
 	color: #fff;
 }
 
-main {
-	width: 75vw;
-	max-width: 1600px;
-	margin: 0 auto 5rem auto;
-}
-
 .chapter {
 	padding: 10rem 0 0 0;
 }
@@ -187,11 +66,6 @@ main {
 	font-family: 'PT Serif', serif;
 }
 
-.chapter p {
-	padding-bottom: 2rem;
-	text-align: left;
-}
-
 .chapter p.subPara {
 	padding-left: 2rem;
 }
@@ -207,6 +81,9 @@ main {
 }
 
 @media (max-width: 725px) {
+	nav a {
+		font-size: 1rem;
+	}
 	.themeToggle {
 		top: 1.5rem;
 		right: 1.5rem;

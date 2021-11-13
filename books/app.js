@@ -97,14 +97,16 @@ for (let i = 0; i < books.length; i++) {
 }
 
 const arrowAnim = () => {
-    if (headerArrow.classList.value.includes('arrowDown')) {
-        headerArrow.classList.remove('arrowDown');
-        headerArrow.classList.add('arrowUp');
-    }   else {
-        headerArrow.classList.add('arrowDown');
-        headerArrow.classList.remove('arrowUp');
+    if (window.innerWidth > 540) {
+        if (headerArrow.classList.value.includes('arrowDown')) {
+            headerArrow.classList.remove('arrowDown');
+            headerArrow.classList.add('arrowUp');
+        }   else {
+            headerArrow.classList.add('arrowDown');
+            headerArrow.classList.remove('arrowUp');
+        }
+        setTimeout(arrowAnim, 500);
     }
-    setTimeout(arrowAnim, 500);
 }
 
 arrowAnim();
@@ -179,3 +181,4 @@ searchBar.addEventListener('input', () => {
         noBooksFound.style.display = 'block';
     }
 });
+
