@@ -169,7 +169,7 @@ searchBar.addEventListener('input', () => {
         post.style.display = 'none'
     }
     for (let i = 0; i < books.length; i++) {
-        if (books[i].Title.toLowerCase().includes(searchBar.value)) {
+        if (books[i].Title.toLowerCase().includes(searchBar.value.toLowerCase())) {
             noBooksFound.style.display = 'none';
             allPosts[i].style.display = 'flex';
             shownBooks.push(books[i]);
