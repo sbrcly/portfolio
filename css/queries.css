@@ -124,8 +124,8 @@
 	body {
 		padding-bottom: 3rem;
 	}
-	section {
-		top: 130%;
+	.Home {
+		top: 120%;
 	}
 	.About {
 		top: 95%;
@@ -164,11 +164,11 @@
 		opacity: 0;
 		z-index: -1;
 		text-align: center;
-		transition: all 0.7s;
+		transition: all 0.1s;
 	}
 	.nav-links.show-on-mobile {
 		opacity: 1;
-		transition: all 0.7s;
+		transition: all 0.1s;
 	}
 	.main-nav-link {
 		padding: 1rem;
@@ -223,8 +223,11 @@
 		top: 15%;
 		width: 99vw;
 	}
+	.Contact {
+		top: 85%;
+	}
 	.contact-info {
-		top: -20%;
+		height: 45vh;
 	}
 	.contact-info h1 {
 		align-self: center;
@@ -252,6 +255,9 @@
 	.resume-section {
 		height: 200px;
 	}
+	.Home {
+		top: 130%;
+	}
 	.subtitle {
 		letter-spacing: 2px;
 	}
@@ -261,8 +267,15 @@
 	section {
 		top: 160%;
 	}
+	.Home {
+		top: 160%;
+	}
 	.About {
 		top: 120%;
+	}
+	.Contact {
+		top: 85%;
+		padding-bottom: 2rem;
 	}
 	.container-section {
 		width: 100vw;
@@ -288,9 +301,6 @@
 	.skills-description {
 		padding-top: 1rem;
 		text-align: center;
-	}
-	.contact-info {
-		top: -60%;
 	}
 	.contact-info h1 {
 		font-size: 1.5rem;

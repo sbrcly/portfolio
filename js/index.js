@@ -26,12 +26,12 @@ const pages = [
         icon: '#',
         important: false
     },
-    {
-        name: 'Projects',
-        url: '#',
-        icon: '#',
-        important: true
-    },
+    // {
+    //     name: 'Projects',
+    //     url: '#',
+    //     icon: '#',
+    //     important: true
+    // },
     {
         name: 'Contact',
         url: '#',
