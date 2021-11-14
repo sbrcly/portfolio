@@ -104,6 +104,11 @@
 	.container-section {
 		margin-bottom: 2rem;
 	}
+	img {
+		height: 150px;
+		width: 150px;
+		margin-left: 2rem;
+	}
 	.contact-info {
 		top: 52%;
 	}
@@ -126,9 +131,11 @@
 	}
 	.Home {
 		top: 120%;
+		text-align: center;
 	}
 	.About {
 		top: 70%;
+		text-align: center;
 	}
 	.bg-decoration {
 		display: none;
@@ -197,7 +204,10 @@
 		height: auto;
 	}
 	img {
-		margin: 2rem;
+		height: 150px;
+		width: 225px;
+		margin-left: 0;
+		margin: 1rem 0;
 	}
 	.section-main-info-text {
 		max-width: 100%;
@@ -221,9 +231,15 @@
 	}
 	.icon-container {
 		font-size: 2.5rem;
+		margin: 1.5rem 0;
 	}
 	.skills-description {
 		font-size: 14px;
+	}
+	#resume-img {
+		width: 100%;
+		height: auto;
+		margin: 1rem 0;
 	}
 	.subtitle {
 		top: 15%;

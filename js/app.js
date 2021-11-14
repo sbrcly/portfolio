@@ -125,16 +125,31 @@ class Projects {
        this.link2 = link2;
 
         this.setLatestProjectInfo();
+        window.addEventListener('resize', this.changeImages);
     }
     setLatestProjectInfo = () => {
         for (let i = 0; i < 2; i++) {
-            const {name, techStack, description, img, sectionLink, codeLink, imgAlt} = this.projects[i];
+            const {name, techStack, description, img, sectionLink, codeLink, imgAlt, imgMobile} = this.projects[i];
             this.title[i].innerHTML = `${name} <span>(${techStack})</span>`;
             this.description[i].innerText = description;
-            this.img[i].setAttribute('src', img);
+            if (window.innerWidth > 768) {
+                this.img[i].setAttribute('src', img);
+            }   else {
+                this.img[i].setAttribute('src', imgMobile);
+            };
             this.img[i].setAttribute('alt', imgAlt);
             this.link1[i].setAttribute('href', sectionLink);
             this.link2[i].setAttribute('href', codeLink);
+        }
+    }
+    changeImages = () => {
+        for (let i = 0; i < 2; i++) {
+            const {img, imgMobile} = this.projects[i];
+            if (window.innerWidth <= 765) {
+                this.img[i].setAttribute('src', imgMobile);
+            }   else {
+                this.img[i].setAttribute('src', img);
+            }
         }
     }
 }
@@ -178,3 +193,18 @@ const createIcons = (icons, appendTo) => {
 };
 
 createIcons(skills, skillMainContent);
+
+const resumeImg = document.querySelector('#resume-img');
+
+if (window.innerWidth <= 765) {
+    resumeImg.setAttribute('src', '/images/resume-mobile.PNG');
+}   else {
+    resumeImg.setAttribute('src', '/images/resume.PNG');
+}
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 765) {
+        resumeImg.setAttribute('src', '/images/resume-mobile.PNG');
+    }   else {
+        resumeImg.setAttribute('src', '/images/resume.PNG');
+    }
+})

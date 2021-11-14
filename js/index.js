@@ -62,7 +62,8 @@ const projects = [
         sectionLink: '/projects/testportal',
         codeLink: 'https://github.com/sbrcly/dribbleTemplateTestportal',
         img: '/images/testportalLogo.PNG',
-        imgAlt: 'Testportal logo'
+        imgAlt: 'Testportal logo',
+        imgMobile: '/images/testportal-mobile.PNG'
     },
     {
         name: 'Hangman',
@@ -72,7 +73,8 @@ const projects = [
         sectionLink: '/projects/hangman',
         codeLink: 'https://github.com/sbrcly/hangman',
         img: '/images/hangman.PNG',
-        imgAlt: 'Screenshot of Hangman game'
+        imgAlt: 'Screenshot of Hangman game',
+        imgMobile: '/images/hangman-mobile.PNG'
     },
     {
         name: 'Stopwatch',
@@ -82,7 +84,8 @@ const projects = [
         sectionLink: '/projects/stopwatch',
         codeLink: 'https://github.com/sbrcly/stopwatch',
         img: '#',
-        imgAlt: 'Screenshot of Stopwatch app'
+        imgAlt: 'Screenshot of Stopwatch app',
+        imgMobile: '/images/'
     },
     {
         name: 'Betting Odds',
@@ -92,7 +95,8 @@ const projects = [
         sectionLink: '/projects/bettingOdds',
         codeLink: 'https://github.com/sbrcly/oddsTable',
         img: '#',
-        imgAlt: 'Screenshot Betting odds app'
+        imgAlt: 'Screenshot Betting odds app',
+        imgMobile: '/images/'
     }
 ];
 

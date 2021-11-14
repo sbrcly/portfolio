@@ -254,6 +254,7 @@ a:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 67vw;
+	max-width: 1000px;
 	height: 64vh;
 	transition: all 1s;
 }
@@ -271,7 +272,6 @@ form {
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
-	/* max-width: 1000px; */
 	padding: 2rem 5rem;
 	background-color: #ded4be;
 	border: 1px solid #111;
