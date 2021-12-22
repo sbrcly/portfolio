@@ -10,3 +10,6 @@
 [submodule "projects/tradingSchedule"]
 	path = projects/tradingSchedule
 	url = https://github.com/sbrcly/tradingSchedule
+[submodule "projects/stopwatch"]
+	path = projects/stopwatch
+	url = https://github.com/sbrcly/stopwatch
