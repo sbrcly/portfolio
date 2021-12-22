@@ -87,7 +87,7 @@ const projects = [
         type: 'Utility',
         techStack: ['HTML', 'CSS', 'JavaScript'],
         description: 'Team stats and comparison. Pick a sport, odds format and market type and you will be shown the current betting lines from a variety of sportsbooks.',
-        sectionLink: '/projects/stats&odds',
+        sectionLink: '/projects/stats-odds',
         codeLink: 'https://github.com/sbrcly/oddsTable',
         img: '/images/stats-and-odds.png',
         imgAlt: 'Screenshot Betting odds app',
