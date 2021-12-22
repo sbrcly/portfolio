@@ -100,6 +100,7 @@ class SectionNavigation {
     }
 }
 
+console.log(window.innerWidth);
 const pageNavigation = new SectionNavigation(siteSections, siteSectionLinks);
 
 const toggleMenu = () => {

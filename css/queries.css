@@ -59,14 +59,10 @@
 		}
 		.contact-info {
 			top: 18%;
-			/* left: 50%; */
 		}
 		.contact-info .contact-info h1 {
 			padding-bottom: 0;
 			align-self: center;
-		}
-		form {
-			/* width: 70vw; */
 		}
 		.coming-soon {
 			transform: translate(-50%, -50%);
@@ -87,6 +83,9 @@
 	.contact-info h1 {
 		font-size: 2.5rem;
 		padding-bottom: 5rem;
+	}
+	.project-tiles {
+		margin: 8rem auto 0 auto;
 	}
 }
 
@@ -116,6 +115,13 @@
 		font-size: 2rem;
 		padding-bottom: 5rem;
 	}
+	.project-tiles {
+		max-width: 80vw;
+	}
+	.project-tile {
+		height: 250px;
+		width: 250px;
+	}
 }
 
 @media (max-width: 900px) {
@@ -134,7 +140,7 @@
 		text-align: center;
 	}
 	.About {
-		top: 70%;
+		top: 90%;
 		text-align: center;
 	}
 	.bg-decoration {
@@ -264,13 +270,8 @@
 		padding: 2rem;
 		width: 95vw;
 	}
-	.coming-soon {
-		font-size: 1rem;
-		top: 60%;
-		left: 50%;
-	}
-	.coming-soon h1 {
-		font-size: 1.25rem;
+	.project-tiles {
+		max-width: 95vw;
 	}
 }
 
@@ -295,7 +296,7 @@
 		top: 160%;
 	}
 	.About {
-		top: 95%;
+		top: 110%;
 	}
 	.Contact {
 		top: 70%;
@@ -326,5 +327,8 @@
 	}
 	form {
 		padding: 2rem 0.5rem;
+	}
+	.project-tiles {
+		transform: translateY(-450px);
 	}
 }

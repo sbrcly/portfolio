@@ -249,7 +249,7 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 75vw;
+	max-width: 70vw;
 	margin: auto;
 }
 
@@ -261,6 +261,7 @@ a:hover {
 	margin: 0.5rem;
 	border-radius: 10px;
 	box-shadow: 0 0 15px rgba(34, 34, 34, 0.3);
+	text-align: center;
 }
 
 .project-tile:hover {
@@ -293,7 +294,7 @@ a:hover {
 
 .project-tile:hover .project-content {
 	visibility: visible;
-	background-color: #f1eee9e0;
+	background-color: #f1eee9;
 	transition: all 0.5s;
 }
 
