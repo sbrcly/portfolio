@@ -4,3 +4,6 @@
 [submodule "projects/testportal"]
 	path = projects/testportal
 	url = https://github.com/sbrcly/testportal
+[submodule "projects/biExtractingTool"]
+	path = projects/biExtractingTool
+	url = https://github.com/sbrcly/biExtractingTool

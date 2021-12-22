@@ -109,7 +109,7 @@ const projects = [
         type: 'Utility',
         techStack: ['HTML', 'CSS', 'JavaScript'],
         description: 'This application extracts the Betting Index ID and team name from Don Best and exports that information to excel. In order for the application to work you will need to choose the Excel file attached to this project.',
-        sectionLink: '/projects/biExtractor',
+        sectionLink: '/projects/biExtractingTool',
         codeLink: 'https://github.com/sbrcly/biExtractingTool',
         img: '/images/bi-tool.png',
         imgAlt: 'Screenshot of BI Tool',
