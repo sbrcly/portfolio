@@ -13,3 +13,6 @@
 [submodule "projects/stopwatch"]
 	path = projects/stopwatch
 	url = https://github.com/sbrcly/stopwatch
+[submodule "projects/stats-odds"]
+	path = projects/stats-odds
+	url = https://github.com/sbrcly/stats-odds
