@@ -26,12 +26,12 @@ const pages = [
         icon: '#',
         important: false
     },
-    // {
-    //     name: 'Projects',
-    //     url: '#',
-    //     icon: '#',
-    //     important: true
-    // },
+    {
+        name: 'Projects',
+        url: '#',
+        icon: '#',
+        important: true
+    },
     {
         name: 'Contact',
         url: '#',
@@ -45,11 +45,6 @@ const social = [
         name: 'Github',
         url: 'https://github.com/sbrcly',
         icon: '<i class="fab fa-github-square"></i>'
-    },
-    {
-        name: 'Twitter',
-        url: 'https://twitter.com/sbrcly',
-        icon: '<i class="fab fa-twitter-square"></i>'
     }
 ];
 
@@ -58,7 +53,7 @@ const projects = [
         name: 'Testportal',
         type: 'Website Clone',
         techStack: ['HTML', 'CSS', 'JavaScript'],
-        description: 'This is a clone of an existing website (https://www.testportal.net/). I used their site as design inspiration only (I use the word "inspiration" intentionally, as I changed many things to my own personal liking). All code is my own.',
+        description: 'This is a clone of an existing website (https://www.testportal.net/). This is a work in progress and while it works on desktop, it is currently optimized for mobile only.',
         sectionLink: '/projects/testportal',
         codeLink: 'https://github.com/sbrcly/dribbleTemplateTestportal',
         img: '/images/testportalLogo.PNG',
@@ -69,7 +64,7 @@ const projects = [
         name: 'Hangman',
         type: 'Game',
         techStack: ['HTML', 'CSS', 'JavaScript'],
-        description: 'A simple game of hangman. Try guessing the mystery value at the bottom of the screen. You may change the category using the "category" selector in the middle of the screen. You may also change the difficulty using the button in the top-right corner of the screen.',
+        description: 'A simple game of hangman. Try guessing the mystery value at the bottom of the screen. This project is a demonstration of API usage.',
         sectionLink: '/projects/hangman',
         codeLink: 'https://github.com/sbrcly/hangman',
         img: '/images/hangman.PNG',
@@ -83,19 +78,40 @@ const projects = [
         description: 'This is a stopwatch that tracks and compares lap times. Your current lap time is checked against your previous lap time to determine which was faster.',
         sectionLink: '/projects/stopwatch',
         codeLink: 'https://github.com/sbrcly/stopwatch',
-        img: '#',
+        img: '/images/stopwatch.png',
         imgAlt: 'Screenshot of Stopwatch app',
         imgMobile: '/images/'
     },
     {
-        name: 'Betting Odds',
+        name: 'Stats & Odds',
         type: 'Utility',
         techStack: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Pick a sport, odds format and market type and you will be shown the current betting lines from a variety of sportsbooks.',
+        description: 'Team stats and comparison. Pick a sport, odds format and market type and you will be shown the current betting lines from a variety of sportsbooks.',
         sectionLink: '/projects/bettingOdds',
         codeLink: 'https://github.com/sbrcly/oddsTable',
-        img: '#',
+        img: '/images/stats-and-odds.png',
         imgAlt: 'Screenshot Betting odds app',
+        imgMobile: '/images/'
+    },
+    {
+        name: 'Trading Schedule',
+        type: 'Utility',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        description: 'This is a scheduling application that assigns employees to specific sporting events.',
+        sectionLink: '/projects/tradingSchedule',
+        codeLink: 'https://github.com/sbrcly/tradingSchedule',
+        img: '/images/trading-schedule.png',
+        imgAlt: 'Screenshot of Trading Schedule app',
+        imgMobile: '/images/'
+    },
+    {
+        name: 'BI Tool',
+        type: 'Utility',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        description: 'This application extracts the Betting Index ID and team name from Don Best and exports that information to excel.',
+        codeLink: 'https://github.com/sbrcly/biExtractingTool',
+        img: '/images/bi-tool.png',
+        imgAlt: 'Screenshot of BI Tool',
         imgMobile: '/images/'
     }
 ];
@@ -114,6 +130,11 @@ const skills = [
     {
         name: 'JavaScript',
         icon: '<i class="fab fa-js"></i>',
+        color: '#e4de31'
+    },
+    {
+        name: 'Python',
+        icon: '<i class="fab fa-python"></i>',
         color: '#e4de31'
     },
     {

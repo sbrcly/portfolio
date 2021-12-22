@@ -207,4 +207,44 @@ window.addEventListener('resize', () => {
     }   else {
         resumeImg.setAttribute('src', '/images/resume.PNG');
     }
-})
+});
+
+// PROJECTS PAGE
+
+// CREATE PROJECT TILES
+
+const projectTileContainer = document.querySelector('.project-tiles');
+
+const createProjectTiles = (projects, appendTo) => {
+    for (let project of projects) {
+        const newProjectTile = document.createElement('div');
+        newProjectTile.classList.add('project-tile');
+        newProjectTile.style.backgroundImage = `url(${project.img})`;
+        createTileContent(newProjectTile, project);
+        appendTo.append(newProjectTile);
+    };
+};
+
+const createTileContent = (appendTo, content) => {
+    const projectContent = document.createElement('div');
+    projectContent.classList.add('project-content');
+    const projectTitle = document.createElement('h2');
+    projectTitle.innerText = content.name;
+    const projectDescription = document.createElement('p');
+    projectDescription.innerText = content.description;
+    const projectLinks = document.createElement('div');
+    projectLinks.classList.add('project-links');
+    const projectDemo = document.createElement('a');
+    projectDemo.innerText = 'Project';
+    projectDemo.setAttribute('href', `${content.sectionLink}`);
+    projectDemo.setAttribute('target', '_blank');
+    const projectCode = document.createElement('a');
+    projectCode.innerText = 'Code';
+    projectCode.setAttribute('href', `${content.codeLink}`);
+    projectCode.setAttribute('target', '_blank');
+    projectLinks.append(projectDemo, projectCode);
+    projectContent.append(projectTitle, projectDescription, projectLinks);
+    appendTo.append(projectContent);
+};
+
+createProjectTiles(projects, projectTileContainer);
