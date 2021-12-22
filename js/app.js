@@ -199,7 +199,7 @@ const resumeImg = document.querySelector('#resume-img');
 if (window.innerWidth <= 765) {
     resumeImg.setAttribute('src', '/images/resume-mobile.PNG');
 }   else {
-    resumeImg.setAttribute('src', '/images/resume.PNG');
+    resumeImg.setAttribute('src', '/images/resume.jpg');
 }
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 765) {
