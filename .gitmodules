@@ -7,3 +7,6 @@
 [submodule "projects/biExtractingTool"]
 	path = projects/biExtractingTool
 	url = https://github.com/sbrcly/biExtractingTool
+[submodule "projects/tradingSchedule"]
+	path = projects/tradingSchedule
+	url = https://github.com/sbrcly/tradingSchedule
