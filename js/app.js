@@ -129,8 +129,8 @@ class Projects {
     }
     setLatestProjectInfo = () => {
         for (let i = 0; i < 2; i++) {
-            const {name, techStack, description, img, sectionLink, codeLink, imgAlt, imgMobile} = this.projects[i];
-            this.title[i].innerHTML = `${name} <span>(${techStack})</span>`;
+            const {name, description, img, sectionLink, codeLink, imgAlt, imgMobile} = this.projects[i];
+            this.title[i].innerHTML = `${name}`;
             this.description[i].innerText = description;
             if (window.innerWidth > 768) {
                 this.img[i].setAttribute('src', img);
