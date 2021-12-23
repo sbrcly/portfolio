@@ -114,6 +114,17 @@ const projects = [
         img: '/images/bi-tool.png',
         imgAlt: 'Screenshot of BI Tool',
         imgMobile: '/images/'
+    },
+    {
+        name: '2021 Books',
+        type: 'Blog',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        description: 'These are the books I\'ve read this year and the notes/highlights I took along the way.',
+        sectionLink: '/books',
+        codeLink: '#',
+        img: '/images/books.jpg',
+        imgAlt: 'Screenshot of Books Blog',
+        imgMobile: '/images/'
     }
 ];
 
