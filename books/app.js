@@ -78,6 +78,33 @@ const books = [
         Rating: 4.0,
         img: '/books/assets/Books/Signal and the Noise.PNG',
         imgAlt: 'Image of the book "The Signal and the Noise" by Nate Silver'
+    },
+
+    {
+        Title: 'On Writing Well',
+        Author: 'William Zinsser',
+        Genre: ['Writing', 'Nonfiction'],
+        Rating: 4.3,
+        img: '/books/assets/Books/onWritingWell.jpg',
+        imgAlt: 'Image of the book "On Writing Well" by William Zinsser'
+    },
+
+    {
+        Title: 'The Laws of Human Nature',
+        Author: 'Robert Greene',
+        Genre: ['Psychology', 'Nonfiction'],
+        Rating: 4.4,
+        img: '/books/assets/Books/lawsOfHumanNature.jpg',
+        imgAlt: 'Image of the book "The Laws of Human Nature" by Robert Greene'
+    },
+
+    {
+        Title: 'Being Wrong: Adventures in the Margin of Error',
+        Author: 'Kathryn Schulz',
+        Genre: ['Nonfiction', 'Psychology'],
+        Rating: 4.0,
+        img: '/books/assets/Books/beingWrong.jpg',
+        imgAlt: 'Image of the book "Being Wrong" by Kathryn Schulz'
     }
 ];
 
